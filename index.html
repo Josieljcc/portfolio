@@ -4,58 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio Josiel</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-      }
-
-      header {
-        background-color: #4e878c;
-        margin-bottom: 1rem;
-        width: 100vw;
-        height: 3rem;
-        border-bottom: 1px solid #aeb9b6;
-      }
-      body {
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 50rem;
-        margin-inline: auto;
-        background-color: #b5ffe1;
-      }
-      img {
-        width: 16rem;
-        border-radius: 8rem;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#descricao">Apresentação</a>
-      </nav>
+      <div class="container-flex menu">
+        <div class="logo">
+          <h1>Josiel<strong>Costa</strong></h1>
+        </div>
+        <nav class="indice">
+          <a href="#habilidades">Habilidades</a>
+          <a href="#descricao">Apresentação</a>
+          <a href="#descricao">Projetos</a>
+        </nav>
+      </div>
     </header>
-    <img
-      src="./IMG_03031.jpg"
-      alt="Fotografia do josiel de terno preto gravata preta, plantas ao fundo"
-    />
-    <h1>
-      <a
-        href="https://www.linkedin.com/in/josiel-da-costa/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Josiel da Costa Carvalho</a
-      >
-    </h1>
+
+    <section class="container-perfil">
+      <div class="perfil">
+        <img
+          src="assets/IMG_03031.jpg"
+          alt="Fotografia do josiel de terno preto gravata preta, plantas ao fundo"
+        />
+        <h2>Josiel da Costa Carvalho</h2>
+        <p>Estudante de desenvolvimento Web | Trybe</p>
+      </div>
+      <div class="imagem-lateral">
+        <img
+          src="assets/Tech.jpg"
+          alt="imagem de um notebook desfocado com um óculos em primeiro plano código de programação na tela"
+        />
+      </div>
+    </section>
+
     <p id="descricao">
       Sou Josiel da Costa Carvalho, sou natural de Parnaíba - Piauí
     </p>
