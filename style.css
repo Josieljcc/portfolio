@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-inline: auto;
-  background-color: #b5ffe1;
+  /* background-color: #b5ffe1; */
 }
 
 /* header e menu superior */
@@ -52,7 +52,7 @@ header .indice .indice-item {
 }
 
 .menu nav a {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgb(252, 249, 249);
   transition: 0.23s;
 }
@@ -64,6 +64,7 @@ header .indice .indice-item {
 .logo h1 {
   color: #1f2e30;
   transition: 0.3s;
+  font-size: 2.5rem;
 }
 
 .logo h1 strong {
@@ -73,12 +74,19 @@ header .indice .indice-item {
 
 /* Section 1
 Perfil - foto e texto */
+.session-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5ffe1;
+}
+
 .container-perfil {
   margin-top: 3rem;
   display: flex;
   width: 70%;
   justify-content: space-between;
-  min-height: 80vh;
+  min-height: 85vh;
   align-items: center;
 }
 
@@ -132,6 +140,17 @@ h2 {
   text-align: justify;
 }
 
+.divider2 {
+  width: 100%;
+  height: 2px;
+  background: rgb(0, 82, 49);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 82, 49, 1) 0%,
+    rgba(181, 255, 225, 1) 100%
+  );
+}
+
 .divider {
   width: 100%;
   height: 2px;
@@ -144,23 +163,43 @@ h2 {
 }
 
 /* Section 2*/
+.session-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #84c9ad;
+}
 
 .projects-container {
   width: 70%;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
   margin: 1rem;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 20rem;
+  height: 15rem;
+}
+
+.cards-title {
 }
 
 .card-header img {
